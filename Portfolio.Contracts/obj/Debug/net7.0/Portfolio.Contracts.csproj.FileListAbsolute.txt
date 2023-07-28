@@ -1,0 +1,12 @@
+C:\dev\Portfolio\Portfolio.Contracts\bin\Debug\net7.0\Portfolio.Contracts.deps.json
+C:\dev\Portfolio\Portfolio.Contracts\bin\Debug\net7.0\Portfolio.Contracts.dll
+C:\dev\Portfolio\Portfolio.Contracts\bin\Debug\net7.0\Portfolio.Contracts.pdb
+C:\dev\Portfolio\Portfolio.Contracts\obj\Debug\net7.0\Portfolio.Contracts.csproj.AssemblyReference.cache
+C:\dev\Portfolio\Portfolio.Contracts\obj\Debug\net7.0\Portfolio.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Portfolio\Portfolio.Contracts\obj\Debug\net7.0\Portfolio.Contracts.AssemblyInfoInputs.cache
+C:\dev\Portfolio\Portfolio.Contracts\obj\Debug\net7.0\Portfolio.Contracts.AssemblyInfo.cs
+C:\dev\Portfolio\Portfolio.Contracts\obj\Debug\net7.0\Portfolio.Contracts.csproj.CoreCompileInputs.cache
+C:\dev\Portfolio\Portfolio.Contracts\obj\Debug\net7.0\Portfolio.Contracts.dll
+C:\dev\Portfolio\Portfolio.Contracts\obj\Debug\net7.0\refint\Portfolio.Contracts.dll
+C:\dev\Portfolio\Portfolio.Contracts\obj\Debug\net7.0\Portfolio.Contracts.pdb
+C:\dev\Portfolio\Portfolio.Contracts\obj\Debug\net7.0\ref\Portfolio.Contracts.dll

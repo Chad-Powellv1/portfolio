@@ -1,1 +1,3 @@
-# portfolio
+# Welcome to my rework of my Portfolio!
+
+Since the last time I made my portfolio, I have learned a lot more about web development and design. I have also learned a lot more about myself and what I want to do with my life. I have decided to rework my portfolio to reflect my new skills and my new goals. I hope you enjoy it! This is a work in progress, so please be patient with me as I work on it. I starting with a clean architecture design, using .net and have not decided on what front-end I want to use or try out. I am leaning towards React, but I am not sure yet. I will update this README as I go along.

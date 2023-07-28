@@ -1,0 +1,17 @@
+C:\dev\Portfolio\Portfolio.Infrastructure\bin\Debug\net7.0\Portfolio.Infrastructure.deps.json
+C:\dev\Portfolio\Portfolio.Infrastructure\bin\Debug\net7.0\Portfolio.Infrastructure.dll
+C:\dev\Portfolio\Portfolio.Infrastructure\bin\Debug\net7.0\Portfolio.Infrastructure.pdb
+C:\dev\Portfolio\Portfolio.Infrastructure\obj\Debug\net7.0\Portfolio.Infrastructure.csproj.AssemblyReference.cache
+C:\dev\Portfolio\Portfolio.Infrastructure\obj\Debug\net7.0\Portfolio.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Portfolio\Portfolio.Infrastructure\obj\Debug\net7.0\Portfolio.Infrastructure.AssemblyInfoInputs.cache
+C:\dev\Portfolio\Portfolio.Infrastructure\obj\Debug\net7.0\Portfolio.Infrastructure.AssemblyInfo.cs
+C:\dev\Portfolio\Portfolio.Infrastructure\obj\Debug\net7.0\Portfolio.Infrastructure.csproj.CoreCompileInputs.cache
+C:\dev\Portfolio\Portfolio.Infrastructure\obj\Debug\net7.0\Portfolio.Infrastructure.dll
+C:\dev\Portfolio\Portfolio.Infrastructure\obj\Debug\net7.0\refint\Portfolio.Infrastructure.dll
+C:\dev\Portfolio\Portfolio.Infrastructure\obj\Debug\net7.0\Portfolio.Infrastructure.pdb
+C:\dev\Portfolio\Portfolio.Infrastructure\obj\Debug\net7.0\ref\Portfolio.Infrastructure.dll
+C:\dev\Portfolio\Portfolio.Infrastructure\bin\Debug\net7.0\Portfolio.Application.dll
+C:\dev\Portfolio\Portfolio.Infrastructure\bin\Debug\net7.0\Portfolio.Domain.dll
+C:\dev\Portfolio\Portfolio.Infrastructure\bin\Debug\net7.0\Portfolio.Application.pdb
+C:\dev\Portfolio\Portfolio.Infrastructure\bin\Debug\net7.0\Portfolio.Domain.pdb
+C:\dev\Portfolio\Portfolio.Infrastructure\obj\Debug\net7.0\Portfolio.Infrastructure.csproj.CopyComplete
