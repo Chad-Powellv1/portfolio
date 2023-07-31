@@ -2,7 +2,7 @@ namespace Portfolio.Application.Services.Authentication;
 
 public interface IAuthenticationService {
    
-    AuthenticationResult Login(string Email, string Password);
-   AuthenticationResult Register(string FirstName, string LastName, string Email, string Password);
+    AuthenticationResult Login(string email, string password);
+    AuthenticationResult Register(string firstName, string lastName, string email, string password);
 
 }

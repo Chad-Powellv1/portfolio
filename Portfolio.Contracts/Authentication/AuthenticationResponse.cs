@@ -6,21 +6,21 @@ namespace Portfolio.Contracts.Authentication;
 /// <param name="Guid Id">
 /// The unique identifier of the user.
 /// </param>
-/// <param name="string FirstName">
+/// <param name="string firstName">
 /// The first name of the user.
 /// </param>
-/// <param name="string LastName">
+/// <param name="string lastName">
 /// The last name of the user.
 /// </param>
-/// <param name="string Email">
+/// <param name="string email">
 /// The email address of the user.
 /// </param>
-/// <param name="string Token">
+/// <param name="string token">
 /// The JWT token for the user.
 /// </param>
 public record AuthenticationResponse(
     Guid Id,
-    string FirstName,
-    string LastName,
-    string Email,
-    string Token);
+    string firstName,
+    string lastName,
+    string email,
+    string token);

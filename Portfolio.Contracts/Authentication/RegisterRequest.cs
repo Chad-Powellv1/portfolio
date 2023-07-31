@@ -3,20 +3,20 @@ namespace Portfolio.Contracts.Authentication;
 /// <summary name="RegisterRequest">
 /// The request object for registering a new user.
 /// </summary>
-/// <param name="FirstName">
+/// <param name="firstName">
 /// The first name of the user.
 /// </param>
-/// <param name="LastName">
+/// <param name="lastName">
 /// The last name of the user.
 /// </param>
-/// <param name="Email">
+/// <param name="email">
 /// The email address of the user.
 /// </param>
-/// <param name="Password">
+/// <param name="password">
 /// The password of the user.
 /// </param>
 public record RegisterRequest(
-    string FirstName,
-    string LastName,
-    string Email,
-    string Password);
+    string firstName,
+    string lastName,
+    string email,
+    string password);

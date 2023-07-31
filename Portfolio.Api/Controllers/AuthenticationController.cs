@@ -23,17 +23,17 @@ public class AuthenticationController :ControllerBase {
     public IActionResult Register(RegisterRequest request) {
 
         var authResult = _authenticationService.Register(
-            request.FirstName,
-            request.LastName,
-            request.Email,
-            request.Password);
+            request.firstName,
+            request.lastName,
+            request.email,
+            request.password);
 
         var response = new AuthenticationResponse(
             authResult.Id,
-            authResult.FirstName,
-            authResult.LastName,
-            authResult.Email,
-            authResult.Token);
+            authResult.firstName,
+            authResult.lastName,
+            authResult.email,
+            authResult.token);
 
         return Ok(response);
     }
@@ -42,15 +42,15 @@ public class AuthenticationController :ControllerBase {
     public IActionResult Login(LoginRequest request) {
 
         var authResult = _authenticationService.Login(
-            request.Email,
-            request.Password);
+            request.email,
+            request.password);
 
         var response = new AuthenticationResponse(
             authResult.Id,
-            authResult.FirstName,
-            authResult.LastName,
-            authResult.Email,
-            authResult.Token);
+            authResult.firstName,
+            authResult.lastName,
+            authResult.email,
+            authResult.token);
 
         return Ok(response);
     }

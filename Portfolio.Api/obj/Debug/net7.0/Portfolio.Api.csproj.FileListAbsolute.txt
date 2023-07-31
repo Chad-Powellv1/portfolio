@@ -39,3 +39,8 @@ C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Portfolio.Contracts.pdb
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Portfolio.Application.pdb
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Portfolio.Infrastructure.pdb
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Portfolio.Domain.pdb
+C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
