@@ -1,7 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using Portfolio.Application.Common.interfaces.Authentication;
 using Portfolio.Application.Common.Interfaces.Services;
+using Portfolio.Application.Persistence;
 using Portfolio.Infrastructure.Authentication;
+using Portfolio.Infrastructure.Persistence;
 using Portfolio.Infrastructure.Services;
 
 namespace Portfolio.Infrastructure;
@@ -19,9 +21,12 @@ public static class DependencyInjection {
     /// </summary>
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, Microsoft.Extensions.Configuration.ConfigurationManager configuration) {
 
-        services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
+        
+        services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
+        services.AddScoped<IUserRepository, UserRepository>();
+        
         return services;
     }
 }

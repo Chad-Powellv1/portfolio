@@ -29,10 +29,10 @@ public class AuthenticationController :ControllerBase {
             request.password);
 
         var response = new AuthenticationResponse(
-            authResult.Id,
-            authResult.firstName,
-            authResult.lastName,
-            authResult.email,
+            authResult.User.Id,
+            authResult.User.FirstName,
+            authResult.User.LastName,
+            authResult.User.Email,
             authResult.token);
 
         return Ok(response);
@@ -46,10 +46,10 @@ public class AuthenticationController :ControllerBase {
             request.password);
 
         var response = new AuthenticationResponse(
-            authResult.Id,
-            authResult.firstName,
-            authResult.lastName,
-            authResult.email,
+            authResult.User.Id,
+            authResult.User.FirstName,
+            authResult.User.LastName,
+            authResult.User.Email,
             authResult.token);
 
         return Ok(response);
