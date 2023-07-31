@@ -32,11 +32,11 @@ POST /auth/register
 }
 ```
 
-#### Register Response
-
 ```js
 200 OK
 ```
+
+#### Register Response
 
 ```json
 {
@@ -63,11 +63,12 @@ POST /auth/login
 }
 ```
 
-#### Login Response
 
 ```js
 200 OK
 ```
+
+#### Login Response
 
 ```json
 {
@@ -75,5 +76,6 @@ POST /auth/login
     "firstName": "Chad",
     "lastName": "Powell",
     "email": "test@test.com",
+    "token": "BIx5h9FikocADkfH4LGODxovq3Kz7129HrbwoO0ui0jx1Hb1irf1rL6tLqwP4wfp7rRumEXp6r1i6TcfrZ8vbFXz6OXt6hu8d3JAllKjcEaG5hLj7QA9tMDGz7f55Cz6IO7t2CsCqxlWVddh1oqRWPhUhvZwvycj87bwShkGGX4w17QwdIAzk7T0T4lRPF0W8rK5HyyKeIwyOYytA06Jz3BKXdmm05bCM8ocXpWY8cyhWV6HsAGjZfuMVB01MUws"
 }
 ```

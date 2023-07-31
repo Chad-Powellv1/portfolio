@@ -1,26 +1,19 @@
+using Portfolio.Domain.Models;
+
 namespace Portfolio.Application.Services.Authentication;
 
-/// <summary name="AuthenticationResult">
-/// The result of an authentication request.
+/// <summary>
+/// Represents the result of an authentication attempt.
 /// </summary>
-/// <param name="Id">
-/// The id of an authenticated user.
-/// </param>
-/// <param name="firstName">
-/// The first name of an authenticated user.
-/// </param>
-/// <param name="lastName">
-/// The last name of an authenticated user.
-/// </param>
-/// <param name="email">
-/// The email of an authenticated user.
+/// <param name="User">
+/// The authenticated user. If the authentication attempt failed,
+///  this will be null.
 /// </param>
 /// <param name="token">
-/// The token of an authenticated user.
+/// The authentication token. If the authentication attempt failed,
+/// this will be null.
 /// </param>
+/// </summary>
 public record AuthenticationResult(
-    Guid Id,
-    string firstName,
-    string lastName,
-    string email,
+    User User,
     string token);

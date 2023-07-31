@@ -1,3 +1,5 @@
+using Portfolio.Domain.Models;
+
 namespace Portfolio.Application.Common.interfaces.Authentication;
 
 /// <summary name= "IJwtTokenGenerator">
@@ -5,5 +7,5 @@ namespace Portfolio.Application.Common.interfaces.Authentication;
 /// that generates a JWT token for an authenticated user.
 /// </summary>
 public interface IJwtTokenGenerator {
-    string GenerateToken(Guid userId, string firstName, string lastName);
+    string GenerateToken(User user);
 }
