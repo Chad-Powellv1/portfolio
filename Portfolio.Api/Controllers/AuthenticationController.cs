@@ -1,6 +1,13 @@
+using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
+using Portfolio.Domain.Common.Errors;
+using Portfolio.Application.Authentication.Queries.Login;
 using Portfolio.Contracts.Authentication;
-using Portfolio.Application.Services.Authentication;
+using MediatR;
+using Portfolio.Application.Authentication.Commands;
+using Portfolio.Application.Authentication.Commands.Register;
+using Portfolio.Application.Authentication.Common;
+using Portfolio.Application.Common;
 
 namespace Portfolio.Api.Controllers;
 
@@ -9,50 +16,62 @@ namespace Portfolio.Api.Controllers;
 /// The controller for authentication.
 /// </summary>
 
-[ApiController]
 [Route("auth")]
-public class AuthenticationController :ControllerBase {
+public class AuthenticationController : ApiController {
 
-    private readonly IAuthenticationService _authenticationService;
+    private readonly IMediator _mediator;
 
-    public AuthenticationController(IAuthenticationService authenticationService) {
-        _authenticationService = authenticationService;
+    public AuthenticationController(IMediator mediator)
+    {
+        _mediator = mediator;
     }
 
     [HttpPost("register")]
-    public IActionResult Register(RegisterRequest request) {
+    public async Task<IActionResult> Register(RegisterRequest request)
+    {
+        var command = new RegisterCommand(
+            request.FirstName,
+            request.LastName,
+            request.Email,
+            request.Password);
 
-        var authResult = _authenticationService.Register(
-            request.firstName,
-            request.lastName,
-            request.email,
-            request.password);
+        ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
 
-        var response = new AuthenticationResponse(
-            authResult.User.Id,
-            authResult.User.FirstName,
-            authResult.User.LastName,
-            authResult.User.Email,
-            authResult.token);
-
-        return Ok(response);
+        return authResult.Match(
+            authResult => Ok(MapAuthResult(authResult)),
+            errors => Problem(errors));
     }
+
 
     [HttpPost("login")]
-    public IActionResult Login(LoginRequest request) {
+    public async Task<IActionResult> Login(LoginRequest request) {
 
-        var authResult = _authenticationService.Login(
-            request.email,
-            request.password);
+        var query = new LoginQuery(
+            request.Email,
+            request.Password);
 
-        var response = new AuthenticationResponse(
-            authResult.User.Id,
-            authResult.User.FirstName,
-            authResult.User.LastName,
-            authResult.User.Email,
-            authResult.token);
+        var authResult = await _mediator.Send(query);
+    
+        
+        if(authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials){
+            return Problem(statusCode: StatusCodes.Status401Unauthorized,
+                title: authResult.FirstError.Description);
+        }
+        
 
-        return Ok(response);
+        return authResult.Match(
+            authResult => Ok(MapAuthResult(authResult)),
+            errors => Problem(errors));
+        
     }
     
+        private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+    {
+        return new AuthenticationResponse(
+                    authResult.User.Id,
+                    authResult.User.FirstName,
+                    authResult.User.LastName,
+                    authResult.User.Email,
+                    authResult.Token);
+    }
 }

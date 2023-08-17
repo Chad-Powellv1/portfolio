@@ -1,5 +1,7 @@
-using Portfolio.Application.Persistence;
-using Portfolio.Domain.Models;
+
+
+using Portfolio.Application.Common.Interfaces.Persistence;
+using Portfolio.Domain.Models.User;
 
 namespace Portfolio.Infrastructure.Persistence;
 
@@ -16,4 +18,5 @@ public class UserRepository : IUserRepository
     {
         return _users.SingleOrDefault(user => user.Email == email);
     }
+
 }

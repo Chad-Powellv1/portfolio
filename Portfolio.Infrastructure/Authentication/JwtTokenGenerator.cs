@@ -3,9 +3,9 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using Portfolio.Application.Common.interfaces.Authentication;
+using Portfolio.Application.Common.Interfaces.Authentication;
 using Portfolio.Application.Common.Interfaces.Services;
-using Portfolio.Domain.Models;
+using Portfolio.Domain.Models.User;
 
 namespace Portfolio.Infrastructure.Authentication;
 
@@ -17,6 +17,7 @@ public class JwtTokenGenerator : IJwtTokenGenerator
 {
     private readonly IDateTimeProvider _dateTimeProvider;
     private readonly JwtSettings _jwtSettings;
+    private IJwtTokenGenerator _iJwtTokenGeneratorImplementation;
 
     public JwtTokenGenerator(IDateTimeProvider dateTimeProvider, IOptions<JwtSettings> jwtOptions)
     {
@@ -26,7 +27,7 @@ public class JwtTokenGenerator : IJwtTokenGenerator
 
     public string GenerateToken(User user)
     {
-        var signingCredentials = new SigningCredentials(
+            var signingCredentials = new SigningCredentials(
             new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Secret)),
             SecurityAlgorithms.HmacSha256Signature);
             
@@ -46,8 +47,9 @@ public class JwtTokenGenerator : IJwtTokenGenerator
             claims: claims,
             signingCredentials: signingCredentials);
 
-            return new JwtSecurityTokenHandler().WriteToken(securityToken);
-            
+        return new JwtSecurityTokenHandler().WriteToken(securityToken);
+
     }
+
 
 }

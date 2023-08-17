@@ -10,5 +10,5 @@ namespace Portfolio.Contracts.Authentication;
 /// The password of the user.
 /// </param>
 public record LoginRequest(
-    string email,
-    string password);
+    string Email,
+    string Password);

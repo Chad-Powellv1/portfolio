@@ -10,3 +10,4 @@ Content-Type: application/json
     "Email": "test@test.com",
     "Password": "password"
 }
+
