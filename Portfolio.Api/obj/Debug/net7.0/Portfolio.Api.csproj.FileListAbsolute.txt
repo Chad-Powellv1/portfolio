@@ -5,17 +5,11 @@ C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Portfolio.Api.deps.json
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Portfolio.Api.runtimeconfig.json
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Portfolio.Api.dll
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Portfolio.Api.pdb
-C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
-C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
-C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\dev\Portfolio\Portfolio.Api\obj\Debug\net7.0\Portfolio.Api.csproj.AssemblyReference.cache
 C:\dev\Portfolio\Portfolio.Api\obj\Debug\net7.0\Portfolio.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\dev\Portfolio\Portfolio.Api\obj\Debug\net7.0\Portfolio.Api.AssemblyInfoInputs.cache
 C:\dev\Portfolio\Portfolio.Api\obj\Debug\net7.0\Portfolio.Api.AssemblyInfo.cs
 C:\dev\Portfolio\Portfolio.Api\obj\Debug\net7.0\Portfolio.Api.csproj.CoreCompileInputs.cache
-C:\dev\Portfolio\Portfolio.Api\obj\Debug\net7.0\Portfolio.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\dev\Portfolio\Portfolio.Api\obj\Debug\net7.0\Portfolio.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\dev\Portfolio\Portfolio.Api\obj\Debug\net7.0\staticwebassets\msbuild.Portfolio.Api.Microsoft.AspNetCore.StaticWebAssets.props
 C:\dev\Portfolio\Portfolio.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.Portfolio.Api.props
@@ -44,3 +38,7 @@ C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebT
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\ErrorOr.dll
+C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\MediatR.dll
+C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

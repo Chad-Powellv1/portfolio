@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
-using Portfolio.Application.Common.interfaces.Authentication;
+using Portfolio.Application.Common.Interfaces.Authentication;
+using Portfolio.Application.Common.Interfaces.Persistence;
 using Portfolio.Application.Common.Interfaces.Services;
-using Portfolio.Application.Persistence;
 using Portfolio.Infrastructure.Authentication;
 using Portfolio.Infrastructure.Persistence;
 using Portfolio.Infrastructure.Services;
