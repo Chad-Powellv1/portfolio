@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KzUdt/7bldi6EW2ZD/IgykfWRRrvWAWCcMC0xoTwH4KbFr64mRTdQ/Api5JnKaH6y+FkqdWM3IBx/9CcM30lDw==",
+  "dgSpecHash": "NaWDhd7H9vgBLB1jJFMMgpJtZ5ixqNfiG5zyd7hv2eurS7BxXnfonZQp14SGGBkbOvgjO+Lmpn5MM1fYukPdtg==",
   "success": true,
-  "projectFilePath": "C:\\dev\\Portfolio\\Portfolio.Infrastructure\\Portfolio.Infrastructure.csproj",
+  "projectFilePath": "C:\\dev\\portfolio\\Portfolio.Infrastructure\\Portfolio.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chada\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\chada\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
