@@ -20,7 +20,7 @@ namespace Portfolio.Contracts.Authentication;
 /// </param>
 public record AuthenticationResponse(
     Guid Id,
-    string firstName,
-    string lastName,
-    string email,
-    string token);
+    string FirstName,
+    string LastName,
+    string Email,
+    string Token);

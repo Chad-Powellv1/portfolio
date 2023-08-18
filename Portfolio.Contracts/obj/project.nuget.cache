@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VUYGS1bZfM9pBbxSl5Q30iWeD+cDL0fKBm2KqC8stfGNgi1u2BK3wIvvpKPH/+7uzZ8CNGGaFri/9HAFz138Yg==",
+  "dgSpecHash": "2Q78e/XbxR7W9Tp3ca9AMPtZGIu2YDaGJbH5MxCwj+G9H6vcsbMUM9XZsVL3vJcrP8Z+UIT0BMHQz4P32bO4og==",
   "success": true,
-  "projectFilePath": "C:\\dev\\Portfolio\\Portfolio.Contracts\\Portfolio.Contracts.csproj",
+  "projectFilePath": "C:\\dev\\portfolio\\Portfolio.Contracts\\Portfolio.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

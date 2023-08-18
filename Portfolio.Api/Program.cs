@@ -1,18 +1,14 @@
-using Microsoft.AspNetCore.Mvc.Infrastructure;
-using Portfolio.Api.Common.Errors;
+using Portfolio.Api;
 using Portfolio.Application;
 using Portfolio.Infrastructure;
 
 
 var builder = WebApplication.CreateBuilder(args);
 {
-
-    builder.Services.AddControllers();
     builder.Services
+        .AddPresentation()
         .AddApplication()
         .AddInfrastructure(builder.Configuration);
-       
-    builder.Services.AddSingleton<ProblemDetailsFactory, PortfolioProblemDetailsFactory>();
 }
 
 var app = builder.Build();

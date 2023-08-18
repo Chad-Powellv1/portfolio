@@ -9,7 +9,7 @@ using Portfolio.Domain.Models.User;
 
 namespace Portfolio.Application.Authentication.Commands.Register;
 
-public class RegisterCommandHandler : 
+public class RegisterCommandHandler :
     IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>
 {
     private readonly IJwtTokenGenerator _jwtTokenGenerator;
@@ -24,6 +24,7 @@ public class RegisterCommandHandler :
     public async Task<ErrorOr<AuthenticationResult>> Handle(RegisterCommand command,
         CancellationToken cancellationToken)
     {
+        await Task.CompletedTask;
         if (_userRespository.GetUserByEmail(command.Email) is not null)
         {
             return Errors.User.DuplicateEmail;
@@ -38,7 +39,7 @@ public class RegisterCommandHandler :
         };
 
         _userRespository.Add(user);
-        
+
         var token = _jwtTokenGenerator.GenerateToken(user);
 
         return new AuthenticationResult(
@@ -46,5 +47,5 @@ public class RegisterCommandHandler :
             token);
     }
 }
-        
-  
+
+

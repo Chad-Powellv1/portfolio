@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\Portfolio\\Portfolio.Contracts\\Portfolio.Contracts.csproj": {}
+    "C:\\dev\\portfolio\\Portfolio.Contracts\\Portfolio.Contracts.csproj": {}
   },
   "projects": {
-    "C:\\dev\\Portfolio\\Portfolio.Contracts\\Portfolio.Contracts.csproj": {
+    "C:\\dev\\portfolio\\Portfolio.Contracts\\Portfolio.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\Portfolio\\Portfolio.Contracts\\Portfolio.Contracts.csproj",
+        "projectUniqueName": "C:\\dev\\portfolio\\Portfolio.Contracts\\Portfolio.Contracts.csproj",
         "projectName": "Portfolio.Contracts",
-        "projectPath": "C:\\dev\\Portfolio\\Portfolio.Contracts\\Portfolio.Contracts.csproj",
+        "projectPath": "C:\\dev\\portfolio\\Portfolio.Contracts\\Portfolio.Contracts.csproj",
         "packagesPath": "C:\\Users\\chada\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\Portfolio\\Portfolio.Contracts\\obj\\",
+        "outputPath": "C:\\dev\\portfolio\\Portfolio.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -42,3 +42,6 @@ C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\ErrorOr.dll
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\MediatR.dll
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\MediatR.Contracts.dll
 C:\dev\Portfolio\Portfolio.Api\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\dev\portfolio\Portfolio.Api\bin\Debug\net7.0\Mapster.dll
+C:\dev\portfolio\Portfolio.Api\bin\Debug\net7.0\Mapster.Core.dll
+C:\dev\portfolio\Portfolio.Api\bin\Debug\net7.0\Mapster.DependencyInjection.dll
